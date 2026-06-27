@@ -90,48 +90,6 @@ This pipeline is engineered from the ground up for strict informational fidelity
 * Python 3.8+
 * A Hugging Face API Token (for the Qwen2.5 inference client)
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yourusername/rag-recipe-assistant.git](https://github.com/yourusername/rag-recipe-assistant.git)
-   cd rag-recipe-assistant
-
-```
-
-2. Install the required dependencies:
-```bash
-pip install sentence-transformers huggingface_hub
-
-```
-
-
-3. Set up your environment variables:
-```bash
-export HF_TOKEN="your_huggingface_api_token_here"
-
-```
-
-
-
-### Quick Usage Example
-
-```python
-from recipe_assistant import RecipeRAGPipeline
-
-# Initialize the pipeline with your recipe dataset
-pipeline = RecipeRAGPipeline(data_path="recipes.csv")
-
-# Run a query
-query = "Show me quick chicken recipes"
-response = pipeline.query(query)
-
-print("\n--- Assistant Response ---")
-print(response)
-
-```
-
----
 
 ## 💡 Technical Significance
 
