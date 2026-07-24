@@ -1,7 +1,7 @@
 from rerank import rerank
 from huggingface_hub import InferenceClient
 
-client = InferenceClient(api_key="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")
+client = InferenceClient(api_key="YOUR_HUGGING_FACE_API_KEY")
 
 SYSTEM_PROMPT = """
   You are a grounded recipe assistant.
